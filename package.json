@@ -1,35 +1,14 @@
 {
-  "name": "bot",
-  "private": true,
-  "version": "0.0.0",
+  "name": "comorade",
+  "version": "1.0.0",
+  "description": "Discord bot for filtering messages",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "node index.js"
   },
-  "devDependencies": {
-    "prettier": "^3.3.1",
-    "vite": "^5.1.6"
-  },
-  "description": "",
-  "main": "../Git/index.js",
   "dependencies": {
-    "axios": "^1.13.2",
-    "cookie-parser": "^1.4.7",
-    "discord.js": "^14.25.1",
-    "dotenv": "^17.2.3",
-    "esbuild": "^0.21.5",
-    "express": "^5.2.1",
-    "express-session": "^1.18.2",
-    "nanoid": "^3.3.11",
-    "node-fetch": "^2.7.0",
-    "picocolors": "^1.1.1",
-    "postcss": "^8.5.6",
-    "rollup": "^4.53.3",
-    "source-map-js": "^1.2.1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.4.0"
+  }
 }
