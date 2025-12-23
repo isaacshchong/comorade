@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Comorade - Home</title>
+  <style>
+      :root {
+          --bg: #0f1115;
+          --panel: rgba(26,31,41,0.85);
+          --text: #e6eaf2;
+          --muted: #9aa4b2;
+          --accent: #5865f2;
+          --accent-2: #3ba55d;
+          --radius: 14px;
+          --shadow: 0 8px 24px rgba(0,0,0,0.4);
+      }
+
+      * { box-sizing: border-box; }
+      body {
+          margin: 0;
+          font-family: "Segoe UI", Roboto, Arial, sans-serif;
+          background: radial-gradient(1200px 600px at 20% 0%, #151925 20%, #0f1115 60%, #0c0f14 100%);
+          color: var(--text);
+      }
+
+      header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 18px 24px;
+          background: rgba(20,22,28,0.85);
+          backdrop-filter: blur(8px);
+          border-bottom: 1px solid #262c3b;
+      }
+      header h1 {
+          font-size: 1.4rem;
+          margin: 0;
+      }
+
+      main {
+          padding: 40px;
+          display: grid;
+          gap: 24px;
+      }
+
+      .hero {
+          background: var(--panel);
+          border-radius: var(--radius);
+          padding: 32px;
+          box-shadow: var(--shadow);
+          text-align: center;
+      }
+      .hero h2 {
+          margin: 0 0 12px;
+          font-size: 1.6rem;
+      }
+      .hero p {
+          margin: 0;
+          color: var(--muted);
+          font-size: 1rem;
+      }
+
+      .login-button {
+          margin-top: 24px;
+          display: inline-block;
+          background: linear-gradient(135deg, var(--accent), #4752c4);
+          color: #fff;
+          font-weight: 600;
+          padding: 12px 24px;
+          border-radius: 8px;
+          text-decoration: none;
+          box-shadow: 0 6px 16px rgba(88,101,242,0.35);
+          transition: background 0.2s ease;
+      }
+      .login-button:hover {
+          background: #4752c4;
+      }
+
+      .grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+          gap: 20px;
+      }
+
+      .card {
+          background: var(--panel);
+          border-radius: var(--radius);
+          padding: 24px;
+          box-shadow: var(--shadow);
+          text-decoration: none;
+          color: var(--text);
+          transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .card:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 12px 32px rgba(0,0,0,0.6);
+      }
+      .card h3 {
+          margin: 0 0 8px;
+          font-size: 1.2rem;
+      }
+      .card p {
+          margin: 0;
+          color: var(--muted);
+          font-size: 0.95rem;
+      }
+
+      footer {
+          text-align: center;
+          padding: 16px;
+          font-size: 0.85rem;
+          color: var(--muted);
+          border-top: 1px solid #262c3b;
+          background: rgba(20,22,28,0.85);
+      }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Comorade</h1>
+</header>
+
+<main>
+  <section class="hero">
+    <h2>Your Discord Moderation Companion</h2>
+    <p>Comorade keeps your community safe, organized, and fun. Explore its capabilities below.</p>
+    <a class="login-button" href="https://discord.com/oauth2/authorize?client_id=1447916346464796818&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A4000%2Fcallback&scope=identify+connections+email+guilds+guilds.join">
+      Login with Discord
+    </a>
+  </section>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Moderation</h3>
+      <p>Ban, kick, mute, and auto-warn users with customizable rules.</p>
+    </div>
+    <div class="card">
+      <h3>Anti-Spam</h3>
+      <p>Detect spam, bad words, and raid attempts instantly.</p>
+    </div>
+    <div class="card">
+      <h3>Logging</h3>
+      <p>Track joins, leaves, edits, and moderation actions with detailed logs.</p>
+    </div>
+    <div class="card">
+      <h3>Custom Commands</h3>
+      <p>Create your own commands with role-based permissions.</p>
+    </div>
+    <div class="card">
+      <h3>Server Management</h3>
+      <p>Adjust prefixes, roles, and bot permissions per guild.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2025 Comorade Bot • Secure • Modern • Reliable
+</footer>
+</body>
+</html>
